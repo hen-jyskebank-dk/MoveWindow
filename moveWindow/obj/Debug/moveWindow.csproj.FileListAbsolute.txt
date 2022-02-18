@@ -1,0 +1,8 @@
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\bin\Debug\moveWindow.exe.config
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\bin\Debug\moveWindow.exe
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\bin\Debug\moveWindow.pdb
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\obj\Debug\moveWindow.csproj.AssemblyReference.cache
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\obj\Debug\moveWindow.csproj.SuggestedBindingRedirects.cache
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\obj\Debug\moveWindow.csproj.CoreCompileInputs.cache
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\obj\Debug\moveWindow.exe
+c:\udvikler\tfs\Playground\moveWindow\moveWindow\obj\Debug\moveWindow.pdb
