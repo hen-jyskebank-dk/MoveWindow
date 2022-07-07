@@ -50,10 +50,12 @@ namespace moveWindow
         const int SWF_IgnoreZOrder = 0x0004;
         const int SWF_ShowWindow = 0x0040;
 
-        static public Logger dlog = new Logger(@"c:\udvikler\moveWindow.log");
+        static public Logger dlog = null;
 
         static void Main(string[] args)
         {
+            dlog = new Logger(Environment.GetEnvironmentVariable("userprofile")+@"\movewindow.log");
+
             dlog.log(string.Format("Main: Commandline \"{0}\"", Environment.CommandLine));
 
             String[] windowNames;
@@ -177,17 +179,22 @@ namespace moveWindow
 
         private static IntPtr FindWindowHandle(string windowName, string profileNumber)
         {
+            /*
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Software", true);
             key = key.OpenSubKey("MoveWindow - profile " + profileNumber, true);
             key = key.OpenSubKey(windowName, true);
             string fileName = key.GetValue("Filename").ToString();
-            
+            */
             IntPtr handle = IntPtr.Zero;
             Process[] processes = Process.GetProcesses();
             foreach (var process in processes)
-            {
+            {/*
                 string f = GetProcessFilename(process);
                 if (f == fileName)
+                    if (process.MainWindowHandle != IntPtr.Zero)
+                        handle = process.MainWindowHandle;
+                */
+                if (process.MainWindowTitle.Contains(windowName))
                     if (process.MainWindowHandle != IntPtr.Zero)
                         handle = process.MainWindowHandle;
             }
