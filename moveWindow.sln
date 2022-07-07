@@ -1,31 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moveWindow", "moveWindow\moveWindow.csproj", "{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Debug|x64.ActiveCfg = Debug|x64
+		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Debug|x64.Build.0 = Debug|x64
 		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Release|x64.ActiveCfg = Release|x64
+		{5D74ACAC-E078-4D7B-824E-EB7C1EF1BD6A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs01pr:8080/tfs/jbcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = moveWindow\\moveWindow.csproj
-		SccProjectName1 = moveWindow
-		SccLocalPath1 = moveWindow
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8244E0DC-2F66-4AD5-A2D7-22ED5D3A8839}
 	EndGlobalSection
 EndGlobal
