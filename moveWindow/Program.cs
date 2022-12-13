@@ -25,6 +25,10 @@ namespace moveWindow
 
         [DllImport("user32.dll")]
         public static extern bool GetWindowRect(IntPtr hwnd, ref Rect rectangle);
+        
+        [DllImport("user32.dll")]
+        private static extern int ShowWindow(IntPtr hWnd, uint Msg);
+
 
         public struct Rect
         {
@@ -49,6 +53,20 @@ namespace moveWindow
         const int SWF_IgnoreResize = 0x0001;
         const int SWF_IgnoreZOrder = 0x0004;
         const int SWF_ShowWindow = 0x0040;
+
+        const int SW_Hide = 0;
+        const int SW_ShowNormal = 1;
+        const int SW_ShowMinimized = 2;
+        const int SW_ShowMaximized = 3;
+        const int SW_Maximize = 3;
+        const int SW_ShowNormalNoActivate = 4;
+        const int SW_Show = 5;
+        const int SW_Minimize = 6;
+        const int SW_ShowMinNoActivate = 7;
+        const int SW_ShowNoActivate = 8;
+        const int SW_Restore = 9;
+        const int SW_ShowDefault = 10;
+        const int SW_ForceMinimized = 11;
 
         static public Logger dlog = null;
 
@@ -159,6 +177,8 @@ namespace moveWindow
                 IntPtr handle = FindWindowHandle(windowName, activeProfile);
                 if (handle!=IntPtr.Zero)
                 {
+                    ShowWindow(handle, SW_ShowNormal);
+                    ShowWindow(handle, SW_Restore);
                     RestoreWindowPosition(windowName, handle, out int Top, out int Left, out int Bottom, out int Right, activeProfile);
                     Console.WriteLine("Restored {0} Coordinates {1},{2},{3},{4}", windowName, Top, Left, Bottom, Right);
                 }

@@ -1,0 +1,13 @@
+﻿
+
+
+1. Reagerer ikke hvis vinduet er maksimeret (ex efter undock). Løs ved at sende event om resize (LØST 13-12-2022)
+
+2. Håndter multidesktop
+
+3.
+
+
+
+
+
